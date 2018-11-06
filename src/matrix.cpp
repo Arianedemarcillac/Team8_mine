@@ -1,6 +1,6 @@
 #include "matrix.hpp"
 
-// C'est pas très beau, je suis d'accord, mais juste être d'accord pour la conception de la méthode
+// C'est pas très beau, je suis d'accord, mais juste pour être d'accord sur la conception de la méthode
 
 std::vector<std::vector<double> > Matrix::getPMW(std::vector <std::string> DNAsequence)
 {
