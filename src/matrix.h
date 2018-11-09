@@ -9,9 +9,11 @@
 
 class Matrix {
 private:
+    std::vector<std::vector<double> > matrix;
     
 public:
-    vector<vector<double> > getPMW(vector<string> DNAsequence);
+    vector<vector<double> > getPMW(vector<string> DNAsequences);
+    double score (Matrix m, std::string DNAsequence, double limit)
 }
 
 
