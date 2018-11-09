@@ -57,22 +57,22 @@ double Matrix::score(Matrix m, std::string DNAsequence, double limit)
     {
        if(DNAsequence[i] == A)
        {
-           score =+ (2+log2(m.matrix[i][0]));
+           score += (2+log2(m.matrix[i][0]));
        }
         
         if(DNAsequence[i] == T)
         {
-            score =+ (2+log2(m.matrix[i][1]));
+            score += (2+log2(m.matrix[i][1]));
         }
         
         if(DNAsequence[i] == G)
         {
-            score =+ (2+log2(m.matrix[i][2]));
+            score += (2+log2(m.matrix[i][2]));
         }
         
         if(DNAsequence[i] == C)
         {
-            score =+ (2+log2(m.matrix[i][3]));
+            score += (2+log2(m.matrix[i][3]));
         }
     }
     
