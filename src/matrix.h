@@ -16,10 +16,6 @@ public:
     vector<vector<double> > getPMW(vector<string> DNAsequences, int length);
     
     double score (Matrix m, std::string DNAsequence, double limit);
-    
-    size_t getLenghtMotif();
-    
-    double testPosition();
 }
 
 

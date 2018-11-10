@@ -27,15 +27,15 @@ std::vector<std::vector<double> > Matrix::getPMW(std::vector <std::string> DNAse
             
             if (DNAsequences[j][i]==T){
                 ++count_T;
-				}
+			}
         }
         
         int total = count_A+count_T+count_G+count_C;
         double proba_A = ((count_A/total)+0.25)/(DNAsequence.size()+1);
-        double proba_T = ((count_T/total)+0.25)/(DNAsequence.size()+1);
-        double proba_G = ((count_G/total)+0.25)/(DNAsequence.size()+1);
         double proba_C = ((count_C/total)+0.25)/(DNAsequence.size()+1);
-        std::vector <double> all_proba {proba_A,proba_C,proba_G, proba_T}; //CHANGER L4ORDE ICI
+        double proba_G = ((count_G/total)+0.25)/(DNAsequence.size()+1);
+        double proba_T = ((count_T/total)+0.25)/(DNAsequence.size()+1);
+        std::vector <double> all_proba {proba_A,proba_C,proba_G, proba_T}; 
         
         for (size_t t(0); t<all_proba.size(); ++t) //ajoute pour chaque ligne les 4 probabilités
         {
